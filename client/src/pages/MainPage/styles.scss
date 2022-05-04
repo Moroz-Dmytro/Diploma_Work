@@ -1,0 +1,102 @@
+.page {
+  font-family: 'Inter', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    &__logo {
+      display: flex;
+      align-items: center;
+    }
+
+    &__logo-text {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 29px;
+      color: #030F4B;
+      margin-left: 20px;
+    }
+  }
+
+  .loginButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 154px;
+    height: 52px;
+
+    background: #FD4455;
+    box-shadow: 0px 10px 35px -3px rgba(253, 68, 85, 0.35), 0px 4px 6px rgba(253, 68, 85, 0.25);
+    border-radius: 8px;
+    outline: none;
+    border: none;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FCFCFF;
+
+    transition: all 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      background: #c43544;
+      box-shadow: 0px 10px 35px -3px rgba(80, 20, 26, 0.35), 0px 4px 6px rgba(253, 68, 85, 0.25);
+    }
+  }
+
+  .mainImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 100vh;
+  }
+
+  .main {
+    &__textContent {
+      margin-top: 200px;
+      max-width: 750px;
+    }
+
+    &__header {
+      font-weight: 900;
+      font-size: 70px;
+      line-height: 77px;
+      color: #030F4B;
+    }
+
+    &__article {
+      max-width: 600px;
+      margin-top: 40px;
+
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 128%;
+      color: #52596E;
+    }
+  }
+
+  .mute--off {
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .mute--on {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 90%;
+
+    transition: all 0.3s;
+  }
+}
