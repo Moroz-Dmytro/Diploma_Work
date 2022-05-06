@@ -38,6 +38,8 @@ export const Login:React.FC<Props> = ({ setIsVisible }) => {
         console.log(response.data);
         localStorage.setItem('token', response.data.token);
         localStorage.setItem('role', response.data.result[0].role);
+        localStorage.setItem('username', response.data.result[0].username);
+        localStorage.setItem('userID', response.data.result[0].ID);
         history.push('/account');
       } else {
         setUsetNotExist(true);
@@ -67,7 +69,7 @@ export const Login:React.FC<Props> = ({ setIsVisible }) => {
         <input
           type="text"
           value={username}
-          placeholder="Email"
+          placeholder="Username"
           onChange={(e) => {
             setServerError(false);
             setUsetNotExist(false);

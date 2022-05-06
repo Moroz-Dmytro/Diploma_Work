@@ -1,0 +1,65 @@
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 70px;
+  padding: 0 100px;
+  margin-bottom: 30px;
+
+  background-color: rgba(19, 23, 221, 0.69);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    fill: #fff;
+  }
+
+  &__logo-text {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    margin-left: 20px;
+  }
+
+  &__userInfo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__userLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    margin: 0 20px 0 10px;
+
+    background-color: #FD4455;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  &__exit {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-left: 1px solid #2C2C73;
+    background-color: transparent;
+    color: #fff;
+
+    img {
+      margin-left: 5px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
