@@ -109,7 +109,7 @@ app.post('/login', (req, res) => {
                     if (response) {
                         const id = result[0].id
                         const token = jwt.sign({id}, "jwtSecret", {
-                            expiresIn: 300,
+                            expiresIn: 60 * 60 * 12,
                         })
                         req.session.user = result;
 
