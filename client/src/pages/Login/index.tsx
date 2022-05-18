@@ -18,16 +18,6 @@ export const Login:React.FC<Props> = ({ setIsVisible }) => {
 
   Axios.defaults.withCredentials = true;
 
-  // const register = () => {
-  //   Axios.post('http://localhost:3001/register', {
-  //     username: usernameReg,
-  //     password: passwordReg,
-  //   }).then((response) => {
-  //     // eslint-disable-next-line
-  //     console.log(response);
-  //   });
-  // };
-
   const login = () => {
     Axios.post(`${BASE_URL}/login`, {
       username,
